@@ -1,1 +1,18 @@
-<p>article-list works!</p>
+<h2>Artículos</h2>
+
+<mat-chip-listbox (change)="selectedCategory.set($event.value)">
+  @for (category of categories(); track category) {
+    <mat-chip-option [value]="category">
+      {{ category }}
+    </mat-chip-option>
+  }
+</mat-chip-listbox>
+
+@for (article of filteredArticles(); track article.id)
+{
+  <app-article-card [article]="article">
+
+  </app-article-card>
+} @empty {
+  <p>No se encontraron artículos en esta categoría.</p>
+}

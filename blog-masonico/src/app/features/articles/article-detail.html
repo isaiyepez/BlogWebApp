@@ -1,1 +1,36 @@
-<p>article-detail works!</p>
+@if (article(); as article)
+{
+
+  <nav>
+    <a [routerLink]="['/']">Inicio</a> >
+    <a [routerLink]="['/articulos']">Artículos</a> >
+    <span>{{ article.title }}</span>
+  </nav>
+
+  <h1>{{ article.title }}</h1>
+  <p>{{ article.excerpt }}</p>
+  <p>Autor: {{ article.author }}</p>
+  <p>Publicado el {{ article.publishedAt | date:'longDate':''}}</p>
+  <div [innerHTML]="article.content"></div>
+
+  @if (hasSharedSupport) {
+    <button mat-flat-button color="primary" (click)="share()">Compartir</button>
+  }
+
+  <aside>
+    <h3>Artículos relacionados</h3>
+    <ul>
+      @for (relatedArticle of relatedArticles(); track relatedArticle.id) {
+        <li>
+          <a [routerLink]="['/articulos', relatedArticle.slug]">{{ relatedArticle.title }}</a>
+        </li>
+      } @empty {
+        <p>No hay artículos relacionados.</p>
+      }
+    </ul>
+  </aside>
+
+}
+@else{
+  <p>Cargando...</p>
+}

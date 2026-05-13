@@ -9,7 +9,7 @@ import { Article } from '../models/article.model';
 export class ArticleService {
   private http = inject(HttpClient);
 
-  private articlesCache$ = this.http.get<Article[]>('assets/data/articulos.json').pipe(
+  private articlesCache$ = this.http.get<Article[]>('data/articulos.json').pipe(
     shareReplay(1)
   );
 
