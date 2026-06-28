@@ -2,7 +2,7 @@
   <img mat-card-image [src]="article().coverImage" [alt]="article().title" loading="lazy">
   <mat-card-header>
     <mat-chip-set>
-      <mat-chip>{{ article().category }}</mat-chip>
+      <mat-chip><a [routerLink]="['/categorias', article().category]">{{ article().category }}</a></mat-chip>
     </mat-chip-set>
     <mat-card-title>{{ article().title }}</mat-card-title>
     <mat-card-subtitle>

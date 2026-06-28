@@ -28,7 +28,7 @@ export class ArticleDetailComponent {
       switchMap(slug => this.articleService.getArticleBySlug(slug))
     ), { initialValue: null });
 
-  articles = toSignal(this.articleService.getArticles(), { initialValue: [] })
+  articles = toSignal(this.articleService.getArticles(), { initialValue: [] });
 
   relatedArticles = computed(() => {
     return this.articles()

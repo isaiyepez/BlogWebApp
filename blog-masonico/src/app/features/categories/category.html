@@ -1,1 +1,15 @@
-<p>category works!</p>
+<h1>{{ nombre() }}</h1>
+
+@if(filteredArticles().length > 0) {
+
+<ul>
+  @for (article of filteredArticles(); track article.id) {
+    <li>
+      <app-article-card [article]="article"></app-article-card>
+    </li>
+  }
+</ul>
+}
+@else {
+      <p>No hay artículos en esta categoría.</p>
+}
