@@ -1,1 +1,33 @@
-<p>header works!</p>
+<header class="header">
+  <div class="header-container">
+
+    <div class="flex-item logo-item">
+      <img src="/logo.webp" alt="Logo" class="logo" />
+    </div>
+
+    <div class="flex-item title-item">
+      <a routerLink="/" class="title">
+        Constante, Leal y Digna Respetable Logia Simbólica Abraxas No. 11
+      </a>
+      <div class="subtitle">
+        Jurisdiccionada a la Muy Respetable Gran Logia del Estado de Guanajuato
+      </div>
+    </div>
+
+    <div class="flex-item menu-button-item">
+      <button (click)="toggleMenu()">{{ openMenu() ? '✕' : '☰' }}</button>
+    </div>
+
+    <div class="flex-item nav-item">
+      <ul [class.open]="openMenu()">
+        <li><a routerLink="/">Inicio</a></li>
+        <li><a routerLink="/articulos">Artículos</a></li>
+        <li><a routerLink="/sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+      </ul>
+
+      <input (input)="onSearch($event)" placeholder="Buscar..." />
+    </div>
+
+  </div>
+</header>

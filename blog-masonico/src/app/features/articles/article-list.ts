@@ -3,6 +3,8 @@ import { ArticleService } from '../../core/services/article.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ArticleCardComponent } from "../../shared/article-card/article-card";
 import { MatChipsModule } from '@angular/material/chips';
+import { ActivatedRoute } from '@angular/router';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-article-list',
@@ -14,6 +16,7 @@ import { MatChipsModule } from '@angular/material/chips';
 export class ArticleListComponent {
 
   private articleService = inject(ArticleService);
+  route = inject(ActivatedRoute);
 
   public selectedCategory = signal(null);
 
@@ -21,11 +24,15 @@ export class ArticleListComponent {
     { initialValue: [] }
   );
 
+  searchTerm = toSignal(this.route.queryParams.pipe(map(params => params['search'] ?? '')), { initialValue: '' });
+
   public filteredArticles = computed(() => {
+
     const category = this.selectedCategory();
+    const term = this.searchTerm();
 
     return this.articles()
-    .filter(article => !category || article.category === category);
+      .filter(article => (!category || article.category === category) && (!term || article.title.toLowerCase().includes(term.toLowerCase())));
   });
 
   public categories = computed(() => {
