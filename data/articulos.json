@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "slug": "historia-masoneria-origenes",
+    "title": "La Historia de la Masonería: Orígenes y Evolución",
+    "excerpt": "Descubre cómo la masonería surgió en la Edad Media y se convirtió en uno de los movimientos fraternales más influyentes del mundo.",
+    "content": "La masonería moderna tiene sus raíces en los gremios de albañiles medievales. Durante el siglo XVII, estas organizaciones se transformaron en sociedades especulativas basadas en rituales y filosofía. Los primeros registros documentados muestran la existencia de logias masónicas en Escocia e Inglaterra. La Gran Logia de Inglaterra, fundada en 1717, marcó el inicio de la masonería organizada tal como la conocemos hoy.",
+    "category": "Historia",
+    "tags": [
+      "masonería",
+      "historia",
+      "orígenes",
+      "filosofía"
+    ],
+    "author": "Carlos García",
+    "publishedAt": "2026-03-15T10:30:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria1/800/450",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "slug": "simbolismo-masonico-explicado",
+    "title": "El Simbolismo en la Masonería: Significados Ocultos",
+    "excerpt": "Explora los símbolos más importantes de la masonería y su profundo significado esotérico.",
+    "content": "Los símbolos masónicos comunican enseñanzas profundas a través de imágenes y metáforas. La escuadra y el compás representan la justicia y el conocimiento. El ojo que todo lo ve simboliza la vigilancia divina y la iluminación. La letra G central puede representar geometría o divinidad. Cada grado iniciático introduce nuevos símbolos que revelan capas más profundas de sabiduría.",
+    "category": "Simbolismo",
+    "tags": [
+      "símbolos",
+      "significado",
+      "iniciación",
+      "esoterismo"
+    ],
+    "author": "María López",
+    "publishedAt": "2026-03-10T14:45:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria2/800/450",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "slug": "grados-iniciacion-masoneria",
+    "title": "Los Tres Grados de Iniciación Masónica",
+    "excerpt": "Conoce el viaje espiritual a través de los grados aprendiz, compañero y maestro masón.",
+    "content": "La iniciación masónica se estructura en tres grados principales. El primer grado, Aprendiz, introduce al iniciado en los principios básicos y la estructura moral. El segundo grado, Compañero, profundiza en el conocimiento científico y artístico. El tercer grado, Maestro Masón, representa la culminación del aprendizaje y la responsabilidad con la fraternidad. Cada grado incluye rituales simbólicos que transforman la consciencia del masón.",
+    "category": "Iniciación",
+    "tags": [
+      "grados",
+      "iniciación",
+      "aprendiz",
+      "maestro",
+      "ritual"
+    ],
+    "author": "Juan Martínez",
+    "publishedAt": "2026-03-01T09:15:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria3/800/450",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "slug": "masoneria-valores-principios",
+    "title": "Valores Fundamentales de la Masonería Moderna",
+    "excerpt": "Explora los principios éticos y morales que guían la práctica masónica contemporánea.",
+    "content": "La masonería se fundamenta en valores universales como la fraternidad, la igualdad y la tolerancia. Los masones creen en la perfectibilidad del ser humano y la importancia de la educación moral. El secreto masónico no busca ocultar delitos, sino proteger enseñanzas sagradas. La caridad y el servicio comunitario son expresiones prácticas de estos valores en la sociedad.",
+    "category": "Filosofía",
+    "tags": [
+      "valores",
+      "ética",
+      "principios",
+      "fraternidad"
+    ],
+    "author": "Roberto Fernández",
+    "publishedAt": "2026-02-28T11:20:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria4/800/450",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "slug": "rituales-masones-significado",
+    "title": "Los Rituales Masónicos: Ceremonias de Transformación",
+    "excerpt": "Descubre cómo los rituales masónicos facilitan el crecimiento espiritual y moral de sus miembros.",
+    "content": "Los rituales masónicos son ceremonias dramáticas que representan viajes simbólicos. Cada ritual está cuidadosamente diseñado para transmitir lecciones morales y espirituales. La repetición y el simbolismo crean una experiencia memorable que transforma la consciencia. Los rituales varían entre diferentes ritos masónicos, pero todos comparten el objetivo de elevar el espíritu humano.",
+    "category": "Rituales",
+    "tags": [
+      "rituales",
+      "ceremonias",
+      "transformación",
+      "simbolismo"
+    ],
+    "author": "Fernando Díaz",
+    "publishedAt": "2026-02-20T16:00:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria5/800/450",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "slug": "masoneria-arquitectura-geometria",
+    "title": "Masonería y Arquitectura: La Geometría Sagrada",
+    "excerpt": "Investiga la relación entre los principios masónicos y las proporciones geométricas en la arquitectura.",
+    "content": "La geometría sagrada es fundamental en la filosofía masónica. Los masones utilizan proporciones geométricas específicas en la construcción de templos y edificios. La proporción áurea, el número phi y otros conceptos matemáticos aparecen en las más importantes estructuras masónicas. Estas proporciones no son casuales, sino expresiones del orden divino del universo.",
+    "category": "Arquitectura",
+    "tags": [
+      "geometría",
+      "arquitectura",
+      "proporción",
+      "sagrado"
+    ],
+    "author": "Alejandra Ruiz",
+    "publishedAt": "2026-02-15T13:45:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria6/800/450",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "slug": "masoneria-movimientos-sociales",
+    "title": "Influencia de la Masonería en los Movimientos Sociales",
+    "excerpt": "Analiza el impacto histórico de los masones en revoluciones y cambios sociales significativos.",
+    "content": "A lo largo de la historia, muchos masones han jugado papeles cruciales en movimientos por la libertad y la democracia. La Revolución Francesa contó con masones prominentes entre sus líderes. En América Latina, masones fueron figuras clave en las luchas por la independencia. Sin embargo, es importante distinguir entre la participación individual de masones y las posiciones oficiales de la orden.",
+    "category": "Historia Social",
+    "tags": [
+      "historia",
+      "revoluciones",
+      "democracia",
+      "sociedad"
+    ],
+    "author": "Luis Campos",
+    "publishedAt": "2026-02-10T10:15:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria7/800/450",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "slug": "gnosticismo-masoneria-conexion",
+    "title": "Gnosis y Masonería: La Búsqueda del Conocimiento Sagrado",
+    "excerpt": "Explora las conexiones entre el gnosticismo antiguo y los enseñanzas ocultas masónicas.",
+    "content": "Aunque la masonería moderna no es gnóstica, comparte muchas preocupaciones filosóficas. Ambas tradiciones buscan un conocimiento directo de lo divino más allá del dogma religioso. La idea de iluminación progresiva a través de grados de iniciación tiene paralelos con el conocimiento gnóstico. Los estudiosos encuentran influencias neoplatónicas y herméticas en ambas sistemas.",
+    "category": "Misticismo",
+    "tags": [
+      "gnosticismo",
+      "gnosis",
+      "conocimiento",
+      "iluminación"
+    ],
+    "author": "Sandra Moreno",
+    "publishedAt": "2026-02-05T15:30:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria8/800/450",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "slug": "mujeres-en-masoneria-historia",
+    "title": "La Presencia Femenina en la Masonería: Historia y Cambios",
+    "excerpt": "Descubre cómo las mujeres han ganado espacios en la masonería y su contribución actual.",
+    "content": "Históricamente, la masonería fue exclusivamente masculina, pero esto ha cambiado significativamente. En el siglo XVIII surgieron órdenes masónicas para mujeres. Hoy en día, muchas jurisdicciones reconocen logias femeninas y mixtas. Las mujeres masones contribuyen activamente al desarrollo de la orden y desempeñan roles de liderazgo. La inclusión de mujeres ha enriquecido la práctica masónica contemporánea.",
+    "category": "Género y Masonería",
+    "tags": [
+      "mujeres",
+      "género",
+      "inclusión",
+      "historia"
+    ],
+    "author": "Verónica Castro",
+    "publishedAt": "2026-01-28T12:00:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria9/800/450",
+    "featured": true
+  },
+  {
+    "id": 10,
+    "slug": "masoneria-responsabilidad-social",
+    "title": "Compromiso Social: La Masonería en el Siglo XXI",
+    "excerpt": "Conoce cómo las logias masónicas contribuyen a comunidades y causas sociales en la actualidad.",
+    "content": "Las logias masónicas modernas se dedican a diversos proyectos de beneficencia y responsabilidad social. Desde educación hasta salud, los masones trabajan para mejorar sus comunidades. Muchas logias apoyan becas educativas, hospitales, y programas de asistencia social. La masonería contemporánea reafirma su compromiso con el bienestar humano y el desarrollo social sostenible.",
+    "category": "Responsabilidad Social",
+    "tags": [
+      "responsabilidad social",
+      "caridad",
+      "comunidad",
+      "beneficencia"
+    ],
+    "author": "Daniela Rojas",
+    "publishedAt": "2026-01-20T09:45:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria10/800/450",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "slug": "iniciacion-masoneria-preparacion",
+    "title": "La Preparación para la Iniciación Masónica",
+    "excerpt": "Conoce el proceso de preparación espiritual y moral que antecede a la iniciación en la logia.",
+    "content": "Antes de recibir la luz masónica, el candidato atraviesa un período de reflexión y preparación. Este proceso incluye el examen de conciencia, la renuncia a los metales y la meditación sobre los grandes principios de la fraternidad. La preparación no es un simple trámite, sino un viaje interior que transforma al profano en un ser apto para recibir las enseñanzas de la orden.",
+    "category": "Iniciación",
+    "tags": ["iniciación", "preparación", "candidato", "reflexión"],
+    "author": "Pedro Gutiérrez",
+    "publishedAt": "2026-03-20T10:00:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria11/800/450",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "slug": "camara-reflexiones-masoneria",
+    "title": "La Cámara de Reflexiones: Umbral de la Iniciación",
+    "excerpt": "Descubre el significado profundo de la cámara oscura donde el candidato enfrenta su propia mortalidad.",
+    "content": "La cámara de reflexiones es el primer umbral que cruza el candidato masónico. En este espacio austero y oscuro, el futuro iniciado medita sobre la vida, la muerte y el propósito de su existencia. Los símbolos presentes en la cámara — la calavera, el reloj de arena, el azufre — invitan a una profunda reflexión filosófica. Es el punto de partida del largo viaje iniciático.",
+    "category": "Iniciación",
+    "tags": ["iniciación", "cámara", "reflexión", "simbolismo"],
+    "author": "Arturo Mendoza",
+    "publishedAt": "2026-03-25T08:30:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria12/800/450",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "slug": "historia-grandes-logias-mexico",
+    "title": "Las Grandes Logias de México: Una Historia de Hermandad",
+    "excerpt": "Recorre la historia de las principales logias masónicas en México y su influencia en la nación.",
+    "content": "La masonería llegó a México durante el periodo colonial y jugó un papel determinante en la Independencia. Personajes como Miguel Hidalgo y José María Morelos tuvieron vínculos con la fraternidad. En el siglo XIX, las logias yorkinas y escocesas protagonizaron disputas políticas que marcaron el rumbo del país. Hoy, la Gran Logia de México agrupa a miles de masones comprometidos con los valores de la orden.",
+    "category": "Historia",
+    "tags": ["historia", "México", "logias", "independencia"],
+    "author": "Carlos García",
+    "publishedAt": "2026-03-28T11:00:00Z",
+    "coverImage": "https://picsum.photos/seed/masoneria13/800/450",
+    "featured": false
+  }
+]
