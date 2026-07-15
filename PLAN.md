@@ -167,11 +167,16 @@
 
 ## Cómo Trabajaremos
 
-Cada día me dices **"vamos con el Día N"** y:
-1. Empezamos con el primer task del día
-2. Te explico el concepto antes de escribir código
-3. Revisamos y ajustamos juntos
-4. Avanzamos al siguiente task
+Este proyecto es para **repasar y aprender Angular**, por lo tanto:
+
+- **Tú escribes el código.** Claude te guía, explica el concepto y te dice qué hacer.
+- Claude solo escribe código si tú lo pides explícitamente o si es algo muy mecánico (config, boilerplate mínimo).
+- Cada task sigue este flujo:
+  1. Claude explica el concepto y el objetivo
+  2. Claude te indica qué archivo abrir y qué escribir (con snippets de referencia si hace falta)
+  3. Tú lo implementas
+  4. Claude revisa, corrige y explica cualquier duda
+  5. Avanzamos al siguiente task
 
 Si algo toma más tiempo de lo esperado, lo ajustamos sin problema.
 

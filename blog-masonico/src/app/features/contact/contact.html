@@ -1,1 +1,64 @@
-<p>contact works!</p>
+<div class="contact-page">
+  <div class="contact-header">
+    <h1>Contacto</h1>
+    <hr class="divider-gold">
+    <p>¿Tienes alguna pregunta o deseas comunicarte con nosotros? Completa el formulario y nos pondremos en contacto contigo.</p>
+  </div>
+
+  @if (submitted()) {
+    <div class="success-message">
+      <span class="success-icon">✓</span>
+      <h3>Mensaje enviado</h3>
+      <p>Nos pondremos en contacto contigo a la brevedad.</p>
+    </div>
+  } @else {
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+
+      <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="nombre" type="text">
+        @if (nombre.hasError('required')) {
+          <mat-error>El nombre es obligatorio</mat-error>
+        }
+        @if (nombre.hasError('minlength')) {
+          <mat-error>El nombre debe tener al menos 3 caracteres</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+        @if (email.hasError('required')) {
+          <mat-error>El email es obligatorio</mat-error>
+        }
+        @if (email.hasError('email')) {
+          <mat-error>El email no es válido</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Asunto</mat-label>
+        <input matInput formControlName="asunto" type="text">
+        @if (asunto.hasError('required')) {
+          <mat-error>El asunto es obligatorio</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Mensaje</mat-label>
+        <textarea matInput formControlName="mensaje" rows="5"></textarea>
+        @if (mensaje.hasError('required')) {
+          <mat-error>El mensaje es obligatorio</mat-error>
+        }
+        @if (mensaje.hasError('minlength')) {
+          <mat-error>El mensaje debe tener al menos 10 caracteres</mat-error>
+        }
+      </mat-form-field>
+
+      <div class="form-actions">
+        <button mat-raised-button type="submit" [disabled]="contactForm.invalid">Enviar mensaje</button>
+      </div>
+
+    </form>
+  }
+</div>

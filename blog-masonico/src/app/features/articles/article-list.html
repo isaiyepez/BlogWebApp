@@ -1,18 +1,19 @@
-<h2>Artículos</h2>
+<div class="articles-page">
+  <h2>Artículos</h2>
 
-<mat-chip-listbox (change)="selectedCategory.set($event.value)">
-  @for (category of categories(); track category) {
-    <mat-chip-option [value]="category">
-      {{ category }}
-    </mat-chip-option>
-  }
-</mat-chip-listbox>
+  <mat-chip-listbox (change)="selectedCategory.set($event.value)">
+    @for (category of categories(); track category) {
+      <mat-chip-option [value]="category">
+        {{ category }}
+      </mat-chip-option>
+    }
+  </mat-chip-listbox>
 
-@for (article of filteredArticles(); track article.id)
-{
-  <app-article-card [article]="article">
-
-  </app-article-card>
-} @empty {
-  <p>No se encontraron artículos en esta categoría.</p>
-}
+  <div class="articles-grid">
+    @for (article of filteredArticles(); track article.id) {
+      <app-article-card [article]="article"></app-article-card>
+    } @empty {
+      <p class="empty-state">No se encontraron artículos en esta categoría.</p>
+    }
+  </div>
+</div>

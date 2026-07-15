@@ -1,0 +1,48 @@
+:host {
+  display: block;
+}
+
+.hero {
+  background: linear-gradient(160deg, var(--color-azul-noche) 0%, var(--color-azul-medio) 100%);
+  padding: 5rem var(--padding-lateral);
+  text-align: center;
+  border-bottom: 3px solid var(--color-dorado);
+
+  h1 {
+    color: var(--color-crema);
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    color: var(--color-gris-ritual);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+    color: var(--color-gris-ritual);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  button {
+    background-color: var(--color-dorado) !important;
+    color: var(--color-azul-noche) !important;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 0.5rem 2rem;
+  }
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem var(--padding-lateral);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}

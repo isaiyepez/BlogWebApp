@@ -1,0 +1,140 @@
+:host {
+  display: block;
+}
+
+.article-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem var(--padding-lateral) 4rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-gris-ritual);
+  margin-bottom: 2rem;
+
+  a {
+    color: var(--color-gris-ritual);
+    transition: color 0.2s;
+    &:hover { color: var(--color-dorado); }
+  }
+
+  .breadcrumb-current {
+    color: var(--color-texto-suave);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 250px;
+  }
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 280px;
+  }
+}
+
+.article-excerpt {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-style: italic;
+  color: var(--color-texto-suave);
+  border-left: 3px solid var(--color-dorado);
+  padding-left: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-gris-ritual);
+  margin-bottom: 1.5rem;
+}
+
+.article-content {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-texto);
+
+  p {
+    margin-bottom: 1.25rem;
+    color: var(--color-texto);
+  }
+
+  h2, h3 {
+    margin-top: 2rem;
+  }
+
+  blockquote {
+    border-left: 3px solid var(--color-dorado);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--color-texto-suave);
+  }
+}
+
+.share-btn {
+  margin-top: 2rem;
+  background-color: var(--color-dorado) !important;
+  color: var(--color-azul-noche) !important;
+  font-weight: 700;
+}
+
+.article-aside {
+  .aside-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    border-top: 3px solid var(--color-dorado);
+    position: sticky;
+    top: 1.5rem;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--color-crema-oscuro);
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    a {
+      color: var(--color-texto-suave);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      transition: color 0.2s;
+
+      &:hover { color: var(--color-dorado); }
+    }
+  }
+}
+
+.article-loading {
+  padding: 5rem var(--padding-lateral);
+  text-align: center;
+  color: var(--color-gris-ritual);
+}

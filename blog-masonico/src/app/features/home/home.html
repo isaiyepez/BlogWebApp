@@ -1,15 +1,14 @@
-<section>
-  <h1 class="title">Resp:. Log:. Simb:. Abraxas no. 11</h1>
+<section class="hero">
+  <h1>Resp:. Log:. Simb:. Abraxas no. 11</h1>
   <h3>Jurisdiccionada a la M:. Resp:. Gr:. Log:. del Estado de Guanajuato</h3>
   <p>
     El presente blog es un espacio de reflexión y difusión de temas relacionados con la masonería, su historia, filosofía y actualidad. A través de artículos, ensayos y noticias, buscamos compartir conocimientos y promover el diálogo sobre esta antigua fraternidad que ha influido en diversos aspectos de la sociedad a lo largo de los siglos.
   </p>
-
   <button mat-flat-button color="primary" [routerLink]="['/articulos']">Ver artículos</button>
 </section>
-@for (article of featureArticles(); track article.id) {
-  <app-article-card [article]="article">
 
-  </app-article-card>
-}
-
+<div class="featured-grid">
+  @for (article of featureArticles(); track article.id) {
+    <app-article-card [article]="article"></app-article-card>
+  }
+</div>

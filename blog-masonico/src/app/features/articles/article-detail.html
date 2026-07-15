@@ -1,36 +1,46 @@
-@if (article(); as article)
-{
+@if (article(); as article) {
+  <div class="article-page">
+    <nav class="breadcrumb">
+      <a [routerLink]="['/']">Inicio</a>
+      <span>›</span>
+      <a [routerLink]="['/articulos']">Artículos</a>
+      <span>›</span>
+      <span class="breadcrumb-current">{{ article.title }}</span>
+    </nav>
 
-  <nav>
-    <a [routerLink]="['/']">Inicio</a> >
-    <a [routerLink]="['/articulos']">Artículos</a> >
-    <span>{{ article.title }}</span>
-  </nav>
+    <div class="article-layout">
+      <main class="article-main">
+        <h1>{{ article.title }}</h1>
+        <p class="article-excerpt">{{ article.excerpt }}</p>
+        <div class="article-meta">
+          <span>{{ article.author }}</span>
+          <span>{{ article.publishedAt | date:'longDate' }}</span>
+        </div>
+        <hr class="divider-gold">
+        <div class="article-content" [innerHTML]="article.content"></div>
+        @if (hasSharedSupport) {
+          <button mat-flat-button (click)="share()" class="share-btn">Compartir artículo</button>
+        }
+      </main>
 
-  <h1>{{ article.title }}</h1>
-  <p>{{ article.excerpt }}</p>
-  <p>Autor: {{ article.author }}</p>
-  <p>Publicado el {{ article.publishedAt | date:'longDate':''}}</p>
-  <div [innerHTML]="article.content"></div>
-
-  @if (hasSharedSupport) {
-    <button mat-flat-button color="primary" (click)="share()">Compartir</button>
-  }
-
-  <aside>
-    <h3>Artículos relacionados</h3>
-    <ul>
-      @for (relatedArticle of relatedArticles(); track relatedArticle.id) {
-        <li>
-          <a [routerLink]="['/articulos', relatedArticle.slug]">{{ relatedArticle.title }}</a>
-        </li>
-      } @empty {
-        <p>No hay artículos relacionados.</p>
-      }
-    </ul>
-  </aside>
-
-}
-@else{
-  <p>Cargando...</p>
+      <aside class="article-aside">
+        <div class="aside-card">
+          <h3>Artículos relacionados</h3>
+          <ul>
+            @for (relatedArticle of relatedArticles(); track relatedArticle.id) {
+              <li>
+                <a [routerLink]="['/articulos', relatedArticle.slug]">{{ relatedArticle.title }}</a>
+              </li>
+            } @empty {
+              <p>No hay artículos relacionados.</p>
+            }
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+} @else {
+  <div class="article-loading">
+    <p>Cargando...</p>
+  </div>
 }

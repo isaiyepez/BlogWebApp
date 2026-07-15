@@ -1,10 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Router, RouterLink } from '@angular/router';
 import { Subject, distinctUntilChanged, debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
@@ -15,23 +16,21 @@ export class HeaderComponent {
   openMenu = signal(false);
 
   constructor() {
-    this.searchTerm.pipe(debounceTime(300), distinctUntilChanged()).subscribe((term) => {
-      if (term.trim() !== '') {
-        this.router.navigate(['/articulos'], { queryParams: { search: term } });
-      }
-    });
+    this.searchTerm
+      .pipe(debounceTime(300), distinctUntilChanged(), takeUntilDestroyed())
+      .subscribe((term) => {
+        if (term.trim() !== '') {
+          this.router.navigate(['/articulos'], { queryParams: { search: term } });
+        }
+      });
   }
 
   onSearch(event: Event) {
-  this.searchTerm.next((event.target as HTMLInputElement).value);
-}
+    this.searchTerm.next((event.target as HTMLInputElement).value);
+  }
 
   toggleMenu() {
     this.openMenu.update((value) => !value);
-  }
-
-  ngOnDestroy() {
-    this.searchTerm.unsubscribe();
   }
 }
 

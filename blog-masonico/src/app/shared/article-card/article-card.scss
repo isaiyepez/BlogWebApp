@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+mat-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-crema-oscuro);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(10, 26, 43, 0.14);
+  }
+}
+
+img[mat-card-image] {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+mat-card-content {
+  flex: 1;
+
+  p {
+    font-size: 0.9rem;
+    color: var(--color-texto-suave);
+    line-height: 1.65;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+mat-card-actions {
+  padding: 0 8px 12px;
+
+  a {
+    color: var(--color-dorado);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-dorado-claro);
+    }
+  }
+}
+
+mat-chip a {
+  color: var(--color-azul-noche);
+  font-size: 0.75rem;
+}
+
+:host ::ng-deep {
+  .mat-mdc-card-title {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-size: 1.05rem !important;
+    line-height: 1.4 !important;
+    color: var(--color-azul-noche);
+  }
+
+  .mat-mdc-card-subtitle {
+    font-size: 0.78rem !important;
+    color: var(--color-gris-ritual) !important;
+  }
+}
